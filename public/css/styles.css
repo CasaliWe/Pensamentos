@@ -1,0 +1,606 @@
+*{  
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: white;
+}
+
+#logo{
+    color: #fff;
+     font-size: 30px;
+     text-decoration: none;
+}
+
+#logo i{
+    color: #f6982d;
+     font-size: 30px;
+     margin-left: 10px;
+}
+
+#navbar{
+     padding: 1.2em 3em;
+     margin-bottom: 1em;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #222;
+     border-bottom: 1px solid #f6982d;
+}
+
+#navbar ul{
+     display: flex;
+     list-style: none;
+}
+
+
+#navbar ul li{
+    margin-left: 1em;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: #f6982d;
+}
+
+
+
+/*CONTAINER*/
+#container{
+    min-height: 60vh;
+    padding: 2em;
+}
+
+
+
+/*LOGIN E REGISTER*/
+.auth-container{ 
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2{ 
+    margin-bottom: 1em;
+    color: #fff;
+    border-left: 4px solid #f6982d;
+    padding: .3em;
+    width: 100px;
+}
+
+.auth-container a{ 
+     color: #f6982d;
+}
+
+.form-control{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1em;
+}
+
+.form-control label{
+   margin-bottom: .5em;
+   font-weight: bold;
+}
+
+.form-control input, textarea{
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #f6982d;
+ }
+
+ .form-control [type='submit'], .btn{
+      background-color: transparent;
+      color: #f6982d;
+      border: 2px solid #f6982d;
+      margin-bottom: 1em;
+      padding: 0.5em 1.2em;
+      font-size: 1.2em;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 500ms;
+ }
+
+ .btnn{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-bottom: 1em;
+    padding: 0.5em 1.2em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 500ms;
+ }
+
+ .btnn:hover{
+    background-color: #f6982d;
+    color: white;
+ }
+
+ .form-control [type='submit']:hover, .btn:hover{
+    background-color: #f6982d;
+    color: #fff;
+}
+
+
+
+
+/*MESSAGEM*/
+.message{
+       padding: 1em;
+       color:#004085 ;
+       background-color: #cce5ff;
+       border: 1px solid #b8daff;
+       text-align: center;
+       border-radius: 5px;
+       margin: 0 auto 2em;
+       max-width: 60%;
+}
+
+
+
+
+/*CREATE / EDIT FORM*/
+.pensamento-form-container a{
+     color: #f6982d;
+}
+
+.pensamento-form-container a:hover{
+    color: #fff;
+}
+
+.pensamento-form-container h1{
+     margin: 1em 0;
+     color: #fff;
+     border-left: 4px solid #f6982d;
+     padding: .3em;
+}
+
+.pensamento-form-container form{
+     max-width: 30% ;
+     margin-top: 1.2em;
+}
+
+
+
+/*DAShBOARD*/
+.title-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5em;
+}
+
+.title-container h2{
+    border-left: 4px solid #f6982d;
+    padding: 10px;
+}
+
+.title-container h3{
+     margin-bottom: 1.5em;
+}
+
+.dashboard ul{
+      list-style: none;
+}
+
+.dashboard ul li{
+       padding: 12px;
+       border-bottom: 1px solid #f6982d;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+}
+
+.dashboard .label{
+     font-weight: bold;
+     color: #f6982d;
+}
+
+.dashboard .actions{
+    display: flex;
+}
+
+.dashboard .actions .btn{
+     color: white;
+     border-color: white;
+     margin: 0 0.5em;
+}
+
+.dashboard .semPensamentos {
+     margin-top: 25px;
+}
+
+.dashboard .semPensamentos a{
+    color: #f6982d;
+}
+
+
+
+
+/*HOME*/
+.home-header{
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+      margin: 0 auto;
+      text-align: center;
+}
+
+.home-header h1{
+      margin-bottom: 1em;
+}
+
+.home-header span{
+     color: #f6982d;
+}
+
+.home-header p, form{
+    margin-bottom: 1.2em;
+}
+
+.home-header input{
+     border: none;
+     border-bottom: 1px solid #fff;
+     margin-right: 1em;
+     padding: 5px;
+}
+
+.home-header input[type='text']{
+    width: 60%;
+}
+
+.home-header input::placeholder{
+     color: #fff;
+}
+
+.order-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 80%;
+      margin: 0 auto 1em;
+}
+
+.order-container span{
+      font-weight: bold;
+      color: white;
+}
+
+.order-container form{
+     margin: 0;
+}
+
+.order-container button{
+    margin-bottom: 0;
+    border: none;
+    cursor: pointer;
+    color: #f6982d;
+}
+
+#novos{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#antigos{
+    margin-right: 20px;
+}
+
+.pensamentos-container figure{
+       border-bottom: 1px solid #333;
+       padding: .5em;
+       max-width: 50%;
+       margin: 0 auto 1em;
+}
+
+.pensamentos-container blockquote{
+      font-style: italic;
+      font-size: 2em;
+      margin-bottom: .4em;
+}
+
+.pensamentos-container span{
+     color: #f6982d;
+}
+
+._limpar{
+      text-decoration: none;
+}
+
+
+
+
+
+/*FOOTER*/
+footer{
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid #f6982d;
+      align-items: center;
+}
+
+
+footer span{
+    color: #f6982d;
+}
+
+
+
+
+
+/*--------------MOBILE---------------*/
+#nav-mobile{
+      display: none;
+}
+
+
+
+
+@media (max-width:991px) {
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar {
+        justify-content: center;
+    }
+
+    #nav-mobile{
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 1px solid #f6982d;
+    }
+
+    #logo{
+         font-size: 22px;
+    }
+
+    #container{
+        min-height: 70vh;
+        padding: 1em;
+    }
+
+
+
+
+
+
+    .home-header{
+        max-width: 100%;
+    }
+  
+    .home-header h1{
+        margin-bottom: 1em;
+        font-size: 18px;
+    }
+  
+  .home-header p, form{
+      margin-bottom: 1.2em;
+      width: 100%;
+  }
+  
+  .home-header input{
+       margin-right: 0em;
+       padding: 5px;
+       width: 100%;
+  }
+  
+  .home-header input[type='text']{
+      width: 60%;
+  }
+  
+  .order-container{
+        max-width: 100%;
+        margin: 0 auto 3.5em;
+  }
+  
+  .order-container span{
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+  }
+  
+  .order-container form{
+       margin: 0;
+  }
+  
+  .order-container button{
+      margin-bottom: 0;
+      border: none;
+      cursor: pointer;
+      color: #f6982d;
+  }
+  
+  #novos{
+      margin-left: 7px;
+      margin-right: 7px;
+  }
+  #antigos{
+      margin-right: 10px;
+  }
+  
+  .pensamentos-container figure{
+         border-bottom: 1px solid #333;
+         padding: .5em;
+         max-width: 90%;
+         margin: 0 auto 2em;
+         text-align: center;
+  }
+  
+  .pensamentos-container blockquote{
+        font-style: italic;
+        font-size: 1.5em;
+        margin-bottom: .3em;
+  }
+  
+  .pensamentos-container span{
+       color: #f6982d;
+  }
+  
+  ._limpar{
+        text-decoration: none;
+  }
+
+
+  .form-control [type='submit'], .btn{
+    background-color: transparent;
+    color: #f6982d;
+    border: 2px solid #f6982d;
+    margin-bottom: .7em;
+    padding: 0.3em .8em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.btnn{
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-bottom: 0em !important;
+  padding: 0.3em .8em;
+  font-size: .7em;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 500ms;
+  align-self: center;
+}
+
+
+.pensamento-form-container a{
+    color: #f6982d;
+}
+
+.pensamento-form-container a:hover{
+   color: #fff;
+}
+
+.pensamento-form-container h1{
+    margin: 1em 0;
+    font-size: 22px;
+    color: #fff;
+    border-left: 4px solid #f6982d;
+    padding: .3em;
+}
+
+.pensamento-form-container form{
+    max-width: 90% ;
+    margin-top: 1.2em;
+}
+
+
+.message{
+    padding: .7em;
+    color:#004085 ;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto 2em;
+    max-width: 90%;
+}
+
+
+
+
+
+/*DAShBOARD*/
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.title-container h2{
+border-left: 4px solid #f6982d;
+padding: 10px;
+font-size: 22px;
+}
+
+.title-container h3{
+ margin-bottom: 1.5em;
+}
+
+.dashboard ul{
+  list-style: none;
+  margin-top: 20px;
+}
+
+.dashboard ul li{
+   padding: 12px;
+   border-bottom: 1px solid #f6982d;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.dashboard .label{
+ font-weight: bold;
+ color: #f6982d;
+ font-size: 12px;
+ max-width: 60%;
+ word-break: break-all;
+}
+
+.dashboard .actions{
+display: flex;
+max-width: 35%;
+}
+
+.dashboard .actions .btn{
+ color: white;
+ border-color: white;
+ margin: 0 5px;
+ font-size: 12px;
+}
+
+.home-header p, form {
+    margin-bottom: 0em;
+    width: 100%;
+    align-self: center;
+}
+
+.dashboard .semPensamentos {
+ margin-top: 25px;
+}
+
+.dashboard .semPensamentos a{
+color: #f6982d;
+}
+
+
+
+
+
+    footer{
+        height: auto;
+        padding: 10px;
+        margin-bottom: 90px;
+        border-top: none;
+    }
+    
+    
+    footer span{
+        color: rgba(128, 128, 128, 0.493);
+        font-size: 12px;
+    }
+
+}

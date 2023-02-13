@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Pensamentos</title>
+</head>
+<body>
+      
+    <nav id="navbar">
+           <a href="/" id="logo">Pensamentos <i class="fas fa-lightbulb"></i></a>
+
+           <ul class="navDesk">
+                <li><a href="/">Inicio</a></li>
+                {{#if session.userid}}
+                       <li><a href="/pensamentos/dashboard">Dashboard</a></li>
+                       <li><a href="/logout">Sair</a></li>
+                {{else}}
+                       <li><a href="/login">Login</a></li>
+                       <li><a href="/register">Registrar</a></li>
+                {{/if }}  
+           </ul>
+
+    </nav>
+
+
+    <nav id="nav-mobile">
+       <a href="/"><img src="/img/home.png"></a>
+       {{#if session.userid}}
+              <a href="/pensamentos/dashboard"><img src="/img/dashboard.png"></a>
+              <a href="/logout"><img src="/img/logout.png"></a>
+       {{else}}
+              <a href="/login"><img src="/img/enter.png"></a>
+              <a href="/register"><img src="/img/edit.png"></a>
+       {{/if }} 
+    </nav>
+
+    
+
+    <div id="container">
+
+          {{#if messages.message}}
+               <div class="message">{{messages.message}}</div>
+          {{/if}}
+
+
+          {{{body}}}
+    </div>
+
+    <footer>
+          <span>Weslei Casali &copy; 2023</span>
+    </footer>
+
+
+
+<script src="/js/app.js"></script>
+</body>
+</html>
